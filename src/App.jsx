@@ -17,7 +17,6 @@ function App() {
     { id: 2, title: 'شامبو Caffeine', desc: 'لتنشيط فروة الرأس.', img: placeholderImg, tag: 'عناية بالشعر', price: '260' },
     { id: 3, title: 'شامبو Caffeine + Oils', desc: 'تنشيط وتغذية عميقة.', img: placeholderImg, tag: 'عناية بالشعر', price: '300' },
     { id: 4, title: 'شامبو للشعر المعالج', desc: 'للعناية بالشعر المعالج كيميائياً.', img: placeholderImg, tag: 'عناية بالشعر', price: '300' },
-    { id: 5, title: 'شامبو ليبو (Lipo)', desc: 'شامبو متخصص.', img: placeholderImg, tag: 'عناية بالشعر', price: '260' },
     { id: 6, title: 'شامبو رونق الخالي من السلفات', desc: 'ينظف بلطف ويغذي الشعر من الجذور حتى الأطراف.', img: '/images/shampoo.jpg', tag: 'عناية بالشعر', price: '300' },
     { id: 7, title: 'بلسم الشعر (Conditioner)', desc: 'ترطيب وفك تشابك.', img: placeholderImg, tag: 'عناية بالشعر', price: '300' },
     { id: 8, title: 'بلسم للشعر المجعد', desc: 'مخصص للشعر المجعد.', img: placeholderImg, tag: 'عناية بالشعر', price: '350' },
@@ -76,7 +75,6 @@ function App() {
     { id: 61, title: 'مبرد القدم', desc: 'أداة للعناية بالقدم.', img: placeholderImg, tag: 'إكسسوارات', price: '0' },
     { id: 62, title: 'ليف مغربي', desc: 'ليف طبيعي للاستحمام.', img: placeholderImg, tag: 'إكسسوارات', price: '0' },
     { id: 63, title: 'فازلين', desc: 'ترطيب فائق.', img: placeholderImg, tag: 'ترطيب', price: '25' },
-    { id: 64, title: 'بودي بيوتي للشعر', desc: 'خلاصة الطبيعة لشعر صحي.', img: placeholderImg, tag: 'عناية بالشعر', price: '128' },
     { id: 65, title: 'Hair Mask and leave-in', desc: 'تغذية وحماية طوال اليوم.', img: placeholderImg, tag: 'عناية بالشعر', price: '300' },
   ];
 
@@ -268,3 +266,4 @@ function App() {
 }
 
 export default App;
+
