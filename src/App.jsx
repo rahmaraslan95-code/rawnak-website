@@ -178,8 +178,8 @@ function App() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
           {products.map((item) => (
             <div key={item.id} className="product-card" style={{ borderRadius: '20px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ position: 'relative', height: '400px', overflow: 'hidden', backgroundColor: '#fff' }}>
-                <img src={item.img} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', backgroundColor: '#fff', borderRadius: '15px' }} />
+              <div style={{ position: 'relative', height: '320px', overflow: 'hidden', backgroundColor: '#fff' }}>
+                <img src={item.img} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '10px', backgroundColor: '#fff', borderRadius: '15px' }} />
                 <span style={{ position: 'absolute', top: '12px', right: '12px', backgroundColor: 'rgba(255, 255, 255, 0.9)', color: '#5a3e36', padding: '4px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 'bold', boxShadow: '0 2px 5px rgba(0,0,0,0.05)' }}>{item.tag}</span>
               </div>
               <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
@@ -267,6 +267,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
