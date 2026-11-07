@@ -108,50 +108,38 @@ function App() {
 
   const HomePage = () => (
     <>
-      <section style={{ maxWidth: '900px', margin: '0 auto', padding: '60px 20px', textAlign: 'center' }}>
-        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', borderRadius: '30px', backgroundColor: 'rgba(212, 175, 55, 0.1)', border: '1px solid rgba(212, 175, 55, 0.3)', color: '#5a3e36', fontSize: '12px', fontWeight: 'bold', marginBottom: '20px' }}>
-          <ShieldCheck size={16} color="#d4af37" /> تركيبات صيدلانية آمنة 100%
-        </span>
-        <h2 style={{ fontSize: '42px', fontWeight: 800, color: '#5a3e36', marginBottom: '20px', lineHeight: 1.3 }}>
-          إشراقة طبيعية تليق بجمالكِ مع رونق
-        </h2>
-        <p style={{ color: '#7a6862', fontSize: '16px', lineHeight: '1.8', maxWidth: '700px', margin: '0 auto' }}>
-          مستحضرات عناية بالبشرة والشعر مُصنعة بيد دكتورة صيدلانية متخصصة. زيوت وسيرومات بتركيبات نقية وطبيعية تمنحكِ الأمان والنتائج الحقيقية.
+      <section style={{ textAlign: 'center', padding: '40px 20px', backgroundColor: 'transparent', marginBottom: '20px' }}>
+        <h2 style={{ fontSize: '36px', color: '#5a3e36', marginBottom: '10px' }}>Welcome to Rawnak 🌿</h2>
+        <h3 style={{ fontSize: '24px', color: '#d4af37', marginBottom: '20px' }}>جمالك يبدأ من الطبيعة</h3>
+        <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '16px', lineHeight: '1.8', color: '#7a6862', marginBottom: '15px' }}>
+          في Rawnak بنقدم لك منتجات للعناية بالبشرة والشعر والجسم بمكونات طبيعية 100%، من إعداد دكتورة صيدلانية بكل اهتمام.
         </p>
+        <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '16px', lineHeight: '1.8', color: '#7a6862', marginBottom: '15px' }}>
+          مش عارفة إيه المناسب لبشرتك؟ ابعتي لنا نوع بشرتك والمشكلة اللي بتواجهيها، وإحنا هنساعدك تختاري المنتجات المناسبة ليكي.
+        </p>
+        <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '16px', lineHeight: '1.8', color: '#7a6862', marginBottom: '15px' }}>
+          وعندك منتج معين نفسك فيه؟ ابعتي لنا طلبك وإحنا نوفرهولك!
+        </p>
+        <p style={{ marginTop: '20px', fontWeight: 'bold', color: '#5a3e36', fontSize: '18px' }}>Rawnak – Your Beauty, Our Passion. 🌸</p>
+        <p style={{ fontWeight: 'bold', color: '#d4af37', fontSize: '18px' }}>جمالك طبيعي... وعنايتك تبدأ معانا!</p>
       </section>
 
-      <section style={{ textAlign: 'center', padding: '40px 20px', backgroundColor: '#fff', marginBottom: '20px' }}>
-  <h2 style={{ fontSize: '36px', color: '#5a3e36', marginBottom: '10px' }}>Welcome to Rawnak 🌿</h2>
-  <h3 style={{ fontSize: '24px', color: '#d4af37', marginBottom: '20px' }}>جمالك يبدأ من الطبيعة</h3>
-  <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '16px', lineHeight: '1.8', color: '#7a6862', marginBottom: '15px' }}>
-    في Rawnak بنقدم لك منتجات للعناية بالبشرة والشعر والجسم بمكونات طبيعية 100%، من إعداد دكتورة صيدلانية بكل اهتمام.
-  </p>
-  <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '16px', lineHeight: '1.8', color: '#7a6862', marginBottom: '15px' }}>
-    مش عارفة إيه المناسب لبشرتك؟ ابعتي لنا نوع بشرتك والمشكلة اللي بتواجهيها، وإحنا هنساعدك تختاري المنتجات المناسبة ليكي.
-  </p>
-  <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '16px', lineHeight: '1.8', color: '#7a6862', marginBottom: '15px' }}>
-    وعندك منتج معين نفسك فيه؟ ابعتي لنا طلبك وإحنا نوفرهولك!
-  </p>
-  <p style={{ marginTop: '20px', fontWeight: 'bold', color: '#5a3e36', fontSize: '18px' }}>Rawnak – Your Beauty, Our Passion. 🌸</p>
-  <p style={{ fontWeight: 'bold', color: '#d4af37', fontSize: '18px' }}>جمالك طبيعي... وعنايتك تبدأ معانا!</p>
-</section>
-
-<section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '40px', padding: '40px 20px', flexWrap: 'wrap' }}>
-  <div style={{ flex: 1, minWidth: '300px', textAlign: 'center' }}>
-    <img src="/images/rawnak-collection.jpg" alt="Rawnak Collection" style={{ width: '100%', maxWidth: '500px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }} />
-    <h3 style={{ textAlign: 'center', marginTop: '15px', color: '#5a3e36', fontSize: '20px' }}>منتجات رونق</h3>
-  </div>
-  <div style={{ flex: 1, minWidth: '300px' }}>
-    <h2 style={{ fontSize: '32px', color: '#5a3e36', marginBottom: '20px' }}>ليه تختاري رونق؟</h2>
-    <p style={{ fontSize: '18px', lineHeight: '1.8', color: '#7a6862', marginBottom: '20px' }}>تأسست رونق برؤية صيدلانية متخصصة تهدف لتقديم البديل الطبيعي الفاخر والآمن لمنتجات العناية بالبشرة والشعر.</p>
-    <ul style={{ listStyle: 'none', padding: 0, fontSize: '16px', color: '#5a3e36', fontWeight: 'bold' }}>
-      <li style={{ marginBottom: '10px' }}>✅ تركيبات آمنة جداً ومختبرة</li>
-      <li style={{ marginBottom: '10px' }}>✅ مكونات طبيعية 100%</li>
-      <li style={{ marginBottom: '10px' }}>✅ إشراف دكتورة صيدلانية</li>
-      <li>✅ نتائج حقيقية ومضمونة</li>
-    </ul>
-  </div>
-</section>
+      <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '40px', padding: '40px 20px', flexWrap: 'wrap' }}>
+        <div style={{ flex: 1, minWidth: '300px', textAlign: 'center' }}>
+          <img src="/images/rawnak-collection.jpg" alt="Rawnak Collection" style={{ width: '100%', maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }} />
+          <h3 style={{ textAlign: 'center', marginTop: '15px', color: '#5a3e36', fontSize: '20px' }}>منتجات رونق</h3>
+        </div>
+        <div style={{ flex: 1, minWidth: '300px' }}>
+          <h2 style={{ fontSize: '32px', color: '#5a3e36', marginBottom: '20px' }}>ليه تختاري رونق؟</h2>
+          <p style={{ fontSize: '18px', lineHeight: '1.8', color: '#7a6862', marginBottom: '20px' }}>تأسست رونق برؤية صيدلانية متخصصة تهدف لتقديم البديل الطبيعي الفاخر والآمن لمنتجات العناية بالبشرة والشعر.</p>
+          <ul style={{ listStyle: 'none', padding: 0, fontSize: '16px', color: '#5a3e36', fontWeight: 'bold' }}>
+            <li style={{ marginBottom: '10px' }}>✅ تركيبات آمنة جداً ومختبرة</li>
+            <li style={{ marginBottom: '10px' }}>✅ مكونات طبيعية 100%</li>
+            <li style={{ marginBottom: '10px' }}>✅ إشراف دكتورة صيدلانية</li>
+            <li>✅ نتائج حقيقية ومضمونة</li>
+          </ul>
+        </div>
+      </section>
 
       <section style={{ backgroundColor: '#fff', padding: '60px 20px', textAlign: 'center' }}>
         <h2 style={{ fontSize: '32px', color: '#5a3e36', marginBottom: '20px' }}>عن الدكتورة</h2>
@@ -194,8 +182,8 @@ function App() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
           {products.map((item) => (
             <div key={item.id} className="product-card" style={{ borderRadius: '20px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ position: 'relative', height: '320px', overflow: 'hidden', backgroundColor: '#fff' }}>
-                <img src={item.img} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '10px', backgroundColor: '#fff', borderRadius: '15px' }} />
+              <div style={{ position: 'relative', height: '400px', overflow: 'hidden', backgroundColor: 'transparent' }}>
+                <img src={item.img} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '10px' }} />
                 <span style={{ position: 'absolute', top: '12px', right: '12px', backgroundColor: 'rgba(255, 255, 255, 0.9)', color: '#5a3e36', padding: '4px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 'bold', boxShadow: '0 2px 5px rgba(0,0,0,0.05)' }}>{item.tag}</span>
               </div>
               <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
@@ -283,14 +271,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
