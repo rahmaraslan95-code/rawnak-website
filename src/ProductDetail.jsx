@@ -92,7 +92,7 @@ const ProductDetail = () => {
       <Link to="/" style={{ textDecoration: 'none', color: '#5a3e36', fontWeight: 'bold' }}>← العودة للرئيسية</Link>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', marginTop: '20px', backgroundColor: '#fff', padding: '30px', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
         <div style={{ flex: 1, minWidth: '300px', textAlign: 'center' }}>
-           <img src={product.img} alt={product.title} style={{ width: '100%', maxWidth: '400px', borderRadius: '20px', objectFit: 'cover' }} />
+           <img src={product.img} alt={product.title} style={{ width: '100%', maxWidth: '400px', borderRadius: '20px', objectFit: 'contain', backgroundColor: '#fff' }} />
         </div>
         <div style={{ flex: 1, minWidth: '300px' }}>
            <h1 style={{ fontSize: '32px', color: '#5a3e36', marginBottom: '10px' }}>{product.title}</h1>
@@ -114,4 +114,5 @@ const ProductDetail = () => {
   );
 };
 export default ProductDetail;
+
 
