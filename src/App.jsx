@@ -1,5 +1,4 @@
-﻿$appCode = @'
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import ProductDetail from './ProductDetail';
 import { ShoppingBag, X, Trash2, ShieldCheck } from 'lucide-react';
@@ -268,6 +267,3 @@ function App() {
 }
 
 export default App;
-'@
-Set-Content -Path "src/App.jsx" -Value $appCode -Encoding UTF8
-Write-Host "تم إصلاح الكود بالكامل! 🎉" -ForegroundColor Green
