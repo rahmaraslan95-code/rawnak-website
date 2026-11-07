@@ -1,4 +1,5 @@
-﻿import { useState } from 'react';
+﻿$appCode = @'
+import { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import ProductDetail from './ProductDetail';
 import { ShoppingBag, X, Trash2, ShieldCheck } from 'lucide-react';
@@ -122,7 +123,8 @@ function App() {
 
       <section style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '40px', padding: '40px 20px', flexWrap: 'wrap' }}>
         <div style={{ flex: 1, minWidth: '300px', textAlign: 'center' }}>
-          <img src="/images/sunblock.jpg" alt="Rawnak" style={{ width: '100%', maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }} />
+          <img src="/images/rawnak-collection.jpg" alt="Rawnak Collection" style={{ width: '100%', maxWidth: '400px', borderRadius: '20px', boxShadow: '0 10px 20px rgba(0,0,0,0.1)' }} />
+          <h3 style={{ textAlign: 'center', marginTop: '15px', color: '#5a3e36', fontSize: '20px' }}>منتجات رونق</h3>
         </div>
         <div style={{ flex: 1, minWidth: '300px' }}>
           <h2 style={{ fontSize: '32px', color: '#5a3e36', marginBottom: '20px' }}>ليه تختاري رونق؟</h2>
@@ -162,7 +164,7 @@ function App() {
         ) : (
           <div style={{ maxWidth: '500px', margin: '0 auto', backgroundColor: 'rgba(255,248,240,0.9)', padding: '30px', borderRadius: '20px', border: '2px solid #d4af37' }}>
             <h3 style={{ color: '#5a3e36', marginBottom: '20px' }}>المنتج المثالي ليكي هو:</h3>
-            <img src={quizResult.img} alt={quizResult.result} style={{ width: '150px', height: '150px', objectFit: 'contain', backgroundColor: '#fff', borderRadius: '50%', marginBottom: '15px' }} />
+            <img src={quizResult.img} alt={quizResult.result} style={{ width: '150px', height: '150px', objectFit: 'cover', borderRadius: '50%', marginBottom: '15px' }} />
             <h4 style={{ fontSize: '22px', color: '#d4af37' }}>{quizResult.result}</h4>
             <button onClick={() => { setQuizStep(0); setQuizResult(null); }} style={{ marginTop: '20px', backgroundColor: '#5a3e36', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '20px', cursor: 'pointer' }}>إعادة الاختبار</button>
           </div>
@@ -177,8 +179,8 @@ function App() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
           {products.map((item) => (
             <div key={item.id} className="product-card" style={{ borderRadius: '20px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ position: 'relative', height: '350px', overflow: 'hidden', backgroundColor: '#f4eae4' }}>
-                <img src={item.img} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'contain', backgroundColor: '#fff' }} />
+              <div style={{ position: 'relative', height: '350px', overflow: 'hidden', backgroundColor: '#fff' }}>
+                <img src={item.img} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'contain', padding: '10px' }} />
                 <span style={{ position: 'absolute', top: '12px', right: '12px', backgroundColor: 'rgba(255, 255, 255, 0.9)', color: '#5a3e36', padding: '4px 12px', borderRadius: '20px', fontSize: '11px', fontWeight: 'bold', boxShadow: '0 2px 5px rgba(0,0,0,0.05)' }}>{item.tag}</span>
               </div>
               <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
@@ -241,7 +243,7 @@ function App() {
               ) : (
                 cart.map((item) => (
                   <div key={item.id} style={{ display: 'flex', alignItems: 'center', gap: '12px', backgroundColor: '#fcf8f5', padding: '10px', borderRadius: '12px' }}>
-                    <img src={item.img} alt={item.title} style={{ width: '50px', height: '50px', borderRadius: '8px', objectFit: 'contain', backgroundColor: '#fff' }} />
+                    <img src={item.img} alt={item.title} style={{ width: '50px', height: '50px', borderRadius: '8px', objectFit: 'cover' }} />
                     <div style={{ flexGrow: 1 }}>
                       <h5 style={{ fontWeight: 'bold', fontSize: '13px', color: '#5a3e36', margin: 0 }}>{item.title}</h5>
                       <span style={{ fontSize: '12px', color: '#666' }}>الكمية: {item.qty} - السعر: {item.price !== '0' ? item.price : 'عند الطلب'}</span>
@@ -266,6 +268,6 @@ function App() {
 }
 
 export default App;
-
-
-
+'@
+Set-Content -Path "src/App.jsx" -Value $appCode -Encoding UTF8
+Write-Host "تم إصلاح الكود بالكامل! 🎉" -ForegroundColor Green
